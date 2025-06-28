@@ -29,16 +29,16 @@ This project uses Selenium WebDriver to scrape the top open-source Machine Learn
 
 ## How to Run?
 1. clone the repository
-git clone https://github.com/PavniR/webscraper-selenium.git
+git clone https://github.com/PavniR/webscraper-selenium.git 
 cd webscraper-selenium
 
 2. Install Required Libraries
 Make sure you have Python installed (preferably 3.8+). Then install the required libraries:
+
 pip install selenium pandas 
 
 3. Download ChromeDriver
 Selenium needs ChromeDriver to automate Chrome, download it from the official site; Choose the version that matches your Chrome browser.
-
 Extract the downloaded .zip file and place the chromedriver.exe inside this project folder or add it to your system PATH.
 
 4. Run the Script
