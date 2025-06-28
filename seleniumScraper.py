@@ -45,7 +45,7 @@ browser.quit()
 #converts dictionary items to a list of tuples and each tuple becomes a row, then we name how columns should be recognised 
 data = pandas.DataFrame(projects_list)
 #DataFrame arranges data in tabular form 
-data.columns = ['project_name', 'project_url'] #identifying the columns of dataframe
+data.columns = ['Project Name', 'URL'] #identifying the columns of dataframe
 
 #print(data) 
 
