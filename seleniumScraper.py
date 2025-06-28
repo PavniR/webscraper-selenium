@@ -34,8 +34,8 @@ for repo in projects:
     project_name = repo.text.strip()
     project_url = repo.find_elements(By.XPATH, "a")[0].get_attribute('href')
     projects_list.append({                        #adding each dict as list item to list
-        "Project Name": project_name,
-        "URL": project_url
+        "project_name": project_name,
+        "project_url": project_url
     })
 
 #print(browser.page_source)
@@ -45,7 +45,7 @@ browser.quit()
 #converts dictionary items to a list of tuples and each tuple becomes a row, then we name how columns should be recognised 
 data = pandas.DataFrame(projects_list)
 #DataFrame arranges data in tabular form 
-data.columns = ['Project Name', 'URL'] #identifying the columns of dataframe
+data.columns = ['project_name', 'project_url'] #identifying the columns of dataframe
 
 #print(data) 
 
